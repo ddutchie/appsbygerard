@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="container">
-        <header>
-            <a href="index.html" class="logo">Apps by Gerard</a>
+        <header class="fade-up">
+            <a href="index.html" class="logo">Apps by <span>Gerard</span></a>
             <nav>
                 <ul>
                     <li><a href="index.html" class="active">Home</a></li>
@@ -24,23 +24,21 @@
             </nav>
         </header>
 
-        <section style="text-align: center; margin-bottom: 4rem;">
-            <h1>Next Generation AI Apps</h1>
-            <p style="font-size: 1.25rem; max-width: 600px; margin: 0 auto 2rem;">
-                Crafting intelligent, intuitive, and helpful applications powered by the latest in artificial
-                intelligence.
+        <section class="hero fade-up">
+            <h1>Building Intelligence for<br>Every Passion</h1>
+            <p>
+                From the calm of the lake to the precision of architecture.<br>
+                I build AI tools that understand the real world.
             </p>
         </section>
 
         <main>
-            <h2 style="text-align: center; border: none; margin-bottom: 2rem;">Our Apps</h2>
-
-            <div id="apps-container">
+            <div id="apps-container" class="apps-grid">
                 <!-- Apps will be loaded dynamically from apps.json -->
             </div>
         </main>
 
-        <footer>
+        <footer class="fade-up">
             <p>&copy; 2025 Apps by Gerard. All rights reserved.</p>
             <p>
                 <a href="privacy.html">Privacy Policy</a> |

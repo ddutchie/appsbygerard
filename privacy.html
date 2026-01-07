@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="container">
-        <header>
-            <a href="index.html" class="logo">Apps by Gerard</a>
+        <header class="fade-up">
+            <a href="index.html" class="logo">Apps by <span>Gerard</span></a>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -24,7 +24,7 @@
             </nav>
         </header>
 
-        <main class="glass-card">
+        <main class="content-card fade-up">
             <h1>Privacy Policy</h1>
             <p>Last updated: December 30, 2025</p>
 
@@ -72,9 +72,9 @@
                 <p>If you have any questions about this Privacy Policy, please contact us at:</p>
 
                 <div
-                    style="background: rgba(255, 255, 255, 0.05); padding: 1.5rem; border-radius: 12px; margin-top: 1rem;">
+                    style="background: rgba(255, 255, 255, 0.05); padding: 1.5rem; border-radius: 12px; margin-top: 1rem; border: 1px solid var(--border-color);">
                     <p style="margin-bottom: 0.5rem;"><strong>Email:</strong> <a href="mailto:ddutchie@gmail.com"
-                            style="color: var(--accent-color);">ddutchie@gmail.com</a></p>
+                            style="color: var(--text-accent);">ddutchie@gmail.com</a></p>
                     <p style="margin-bottom: 0;"><strong>Address:</strong><br>
                         705 King Street West<br>
                         Toronto, Canada<br>
@@ -83,7 +83,7 @@
             </section>
         </main>
 
-        <footer>
+        <footer class="fade-up">
             <p>&copy; 2025 Apps by Gerard. All rights reserved.</p>
             <p>
                 <a href="privacy.html">Privacy Policy</a> |
@@ -92,6 +92,7 @@
             </p>
         </footer>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
