@@ -10,7 +10,7 @@ const apps = [
             "📍 Smart GPS Location Memory"
         ],
         "image": "assets/images/hookpoint-icon.png",
-        "link": "#"
+        "link": "https://apps.apple.com/us/app/hookpoint/id6757193954"
     },
     {
         "id": "arcwiz",
@@ -24,7 +24,7 @@ const apps = [
             "🏛️ Architecture History Explorer"
         ],
         "image": "assets/images/archwiz-icon.png",
-        "link": "#"
+        "link": "https://apps.apple.com/us/app/archwiz/id6757251966"
     },
     {
         "id": "texturecam",
@@ -50,20 +50,48 @@ const apps = [
             "📄 Professional PDF Reports"
         ],
         "image": "assets/images/pennymargin-icon.png",
-        "link": "#"
+        "link": "https://apps.apple.com/us/app/penny-margin/id6757367794"
     },
     {
-        "id": "toolchat",
-        "name": "ToolChat",
-        "tagline": "Supercharge Your AI with Custom Tools",
-        "description": "ToolChat is a developer-centric AI assistant platform that empowers you to build, manage, and use custom tools. Connect your assistant to any API, automate complex workflows, and extend its capabilities with real-time logic and dynamic interactions.",
+        "id": "kindMetric",
+        "name": "KindMetric",
+        "tagline": "Understand the \"why\" behind your health data",
+        "description": "KindMetric is the first health and wellness tracker that combines your native Health data with a sophisticated AI Coach to help you understand your body like never before. It uses AI to turn your steps, heart rate, and sleep into actionable insights.",
         "features": [
-            "🛠️ Interactive Tool Builder",
-            "🔌 Seamless API & Webhook Integration",
-            "⚡ Instant Tool Execution"
+            "📈 Daily Readiness Score Analysis",
+            "🤖 Personal AI Health Coach (Offline Support)",
+            "💪 Beautiful Trend Analytics & Heatmaps",
+            "🔒 Privacy First - Native HealthKit Integration"
         ],
-        "image": "assets/images/toolchat-icon.png",
-        "link": "#"
+        "image": "assets/images/kindmetric-icon.png",
+        "link": "https://apps.apple.com/us/app/kindmetric/id6757675064"
+    },
+    // {
+    //     "id": "toolchat",
+    //     "name": "ToolChat",
+    //     "tagline": "Supercharge Your AI with Custom Tools",
+    //     "description": "ToolChat is a developer-centric AI assistant platform that empowers you to build, manage, and use custom tools. Connect your assistant to any API, automate complex workflows, and extend its capabilities with real-time logic and dynamic interactions.",
+    //     "features": [
+    //         "🛠️ Interactive Tool Builder",
+    //         "🔌 Seamless API & Webhook Integration",
+    //         "⚡ Instant Tool Execution"
+    //     ],
+    //     "image": "assets/images/toolchat-icon.png",
+    //     "link": "#"
+    // },
+    {
+        "id": "kanbrain",
+        "name": "KanbrAIn",
+        "tagline": "Kanban-style task management for AI-assisted coding.",
+        "description": "KanbrAIn is a visual task management system and knowledge base designed for AI-assisted development. With a bundled MCP server, it allows AI agents to manage tickets, track progress, and access a local project brain, optimizing context and minimizing token usage.",
+        "features": [
+            "📊 Visual Kanban Board & Markdown Sync",
+            "🧠 Integrated Project Knowledge Base",
+            "🔌 Bundled MCP Server for AI Interaction",
+            "🤖 AI-Native Task Spawning & Tracking"
+        ],
+        "image": "assets/images/kanbrain-icon.png",
+        "link": "https://marketplace.visualstudio.com/items?itemName=GerardSlee.kanbrain"
     }
 
 ];
