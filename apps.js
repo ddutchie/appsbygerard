@@ -66,19 +66,20 @@ const apps = [
         "image": "assets/images/kindmetric-icon.png",
         "link": "https://apps.apple.com/us/app/kindmetric/id6757675064"
     },
-    // {
-    //     "id": "toolchat",
-    //     "name": "ToolChat",
-    //     "tagline": "Supercharge Your AI with Custom Tools",
-    //     "description": "ToolChat is a developer-centric AI assistant platform that empowers you to build, manage, and use custom tools. Connect your assistant to any API, automate complex workflows, and extend its capabilities with real-time logic and dynamic interactions.",
-    //     "features": [
-    //         "🛠️ Interactive Tool Builder",
-    //         "🔌 Seamless API & Webhook Integration",
-    //         "⚡ Instant Tool Execution"
-    //     ],
-    //     "image": "assets/images/toolchat-icon.png",
-    //     "link": "#"
-    // },
+    {
+        "id": "pinch",
+        "name": "Pinch",
+        "tagline": "Build Your AI Tools & Persona",
+        "description": "Unlock the full potential of AI on iOS with Pinch, the advanced assistant that lets you build your own tools and define your AI's personality.",
+        "features": [
+            "📸 Design Your Persona",
+            "🛠️ Build Custom AI Tools",
+            "🔌 Secure On-Device Integrations",
+            "🏠 HomeKit & HealthKit Integration"
+        ],
+        "image": "assets/images/pinch-icon.png",
+        "link": "https://gerardbuilds.com"
+    },
     {
         "id": "kanbrain",
         "name": "KanbrAIn",
