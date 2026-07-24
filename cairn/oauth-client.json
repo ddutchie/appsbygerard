@@ -4,6 +4,7 @@
   "client_uri": "https://gerardbuilds.com",
   "logo_uri": "https://gerardbuilds.com/assets/images/cairn-icon.png",
   "redirect_uris": [
+    "https://gerardbuilds.com/cairn/oauth",
     "cairn://oauth/callback"
   ],
   "grant_types": [
