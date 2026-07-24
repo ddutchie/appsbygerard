@@ -1,0 +1,17 @@
+{
+  "client_id": "https://gerardbuilds.com/cairn/oauth-client.json",
+  "client_name": "Cairn",
+  "client_uri": "https://gerardbuilds.com",
+  "logo_uri": "https://gerardbuilds.com/assets/images/cairn-icon.png",
+  "redirect_uris": [
+    "cairn://oauth/callback"
+  ],
+  "grant_types": [
+    "authorization_code",
+    "refresh_token"
+  ],
+  "response_types": [
+    "code"
+  ],
+  "token_endpoint_auth_method": "none"
+}
