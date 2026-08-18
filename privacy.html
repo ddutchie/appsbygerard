@@ -25,58 +25,78 @@
             </nav>
         </header>
 
-        <main class="content-card fade-up">
-            <h1>Privacy Policy</h1>
-            <p>Last updated: December 30, 2025</p>
+        <main id="policyContainer" class="content-card fade-up">
+            <div class="policy-header-bar">
+                <div>
+                    <h1 id="policyTitle">Privacy Policy</h1>
+                    <p id="policyLastUpdated" style="margin-bottom: 0; margin-top: 0.5rem; color: var(--text-secondary);">Last updated: December 30, 2025</p>
+                </div>
+
+                <div class="lang-select-container">
+                    <span class="lang-icon" aria-hidden="true">🌐</span>
+                    <select id="langSelect" class="lang-select" aria-label="Select Language">
+                        <option value="en">English (US)</option>
+                        <option value="de">Deutsch (German)</option>
+                        <option value="es">Español (Spanish)</option>
+                        <option value="fr">Français (French)</option>
+                        <option value="it">Italiano (Italian)</option>
+                        <option value="ja">日本語 (Japanese)</option>
+                        <option value="ko">한국어 (Korean)</option>
+                        <option value="pt">Português (Portuguese)</option>
+                        <option value="zh">简体中文 (Chinese)</option>
+                        <option value="ar">العربية (Arabic)</option>
+                    </select>
+                </div>
+            </div>
 
             <section>
-                <h2>Introduction</h2>
-                <p>We respect your privacy and are committed to protecting it through our compliance with this policy.
+                <h2 id="introTitle">Introduction</h2>
+                <p id="introText">We respect your privacy and are committed to protecting it through our compliance with this policy.
                     This policy describes the types of information we may collect from you or that you may provide when
                     you visit our applications and our practices for collecting, using, maintaining, protecting, and
                     disclosing that information.</p>
             </section>
 
             <section>
-                <h2>Information Collection</h2>
-                <p>We do not collect, store, or share any personal data on our servers. All data generated or used
+                <h2 id="collectionTitle">Information Collection</h2>
+                <p id="collectionText">We do not collect, store, or share any personal data on our servers. All data generated or used
                     within the application remains on your device regardless of whether you are using a free or paid
                     version.</p>
             </section>
 
             <section>
-                <h2>Advertising and Free Services</h2>
-                <p>For the free versions of our applications, we use Google AdMob to serve advertisements. To deliver
+                <h2 id="adTitle">Advertising and Free Services</h2>
+                <p id="adIntro">For the free versions of our applications, we use Google AdMob to serve advertisements. To deliver
                     relevant and personalized advertisements, Google AdMob may collect and use your device's unique
                     advertising identifier.</p>
                 <ul>
-                    <li><strong>Google AdMob:</strong> We use Google AdMob to display ads. This service may use your
-                        device's advertising ID (e.g., IDFA on iOS, AAID on Android) to provide personalized ads.</li>
+                    <li><strong id="adMobLabel">Google AdMob:</strong> <span id="adMobText">We use Google AdMob to display ads. This service may use your
+                        device's advertising ID (e.g., IDFA on iOS, AAID on Android) to provide personalized ads.</span></li>
                 </ul>
-                <p>We do not collect any other personal information for advertising purposes. You can control
+                <p id="adFooter">We do not collect any other personal information for advertising purposes. You can control
                     personalized advertising by adjusting the settings on your device (e.g., "Ask App Not to Track" on
                     iOS or opting out of personalized ads in Android settings).</p>
             </section>
 
             <section>
-                <h2>Data Usage</h2>
-                <p>We use the information we collect to:</p>
+                <h2 id="usageTitle">Data Usage</h2>
+                <p id="usageIntro">We use the information we collect to:</p>
                 <ul>
-                    <li>Provide, maintain, and improve our apps.</li>
-                    <li>Respond to your comments and questions.</li>
-                    <li>Monitor and analyze trends, usage, and activities.</li>
+                    <li id="usage1">Provide, maintain, and improve our apps.</li>
+                    <li id="usage2">Respond to your comments and questions.</li>
+                    <li id="usage3">Monitor and analyze trends, usage, and activities.</li>
                 </ul>
             </section>
 
             <section>
-                <h2>Contact Us</h2>
-                <p>If you have any questions about this Privacy Policy, please contact us at:</p>
+                <h2 id="contactTitle">Contact Us</h2>
+                <p id="contactIntro">If you have any questions about this Privacy Policy, please contact us at:</p>
 
                 <div
                     style="background: rgba(255, 255, 255, 0.05); padding: 1.5rem; border-radius: 12px; margin-top: 1rem; border: 1px solid var(--border-color);">
-                    <p style="margin-bottom: 0.5rem;"><strong>Email:</strong> <a href="mailto:ddutchie@gmail.com"
+                    <p style="margin-bottom: 0.5rem;"><strong id="emailLabel">Email:</strong> <a href="mailto:ddutchie@gmail.com"
                             style="color: var(--text-accent);">ddutchie@gmail.com</a></p>
-                    <p style="margin-bottom: 0;"><strong>Address:</strong><br>
+                    <p style="margin-bottom: 0;"><strong id="addressLabel">Address:</strong><br>
                         705 King Street West<br>
                         Toronto, Canada<br>
                         M5V 2W8</p>
@@ -93,6 +113,299 @@
             </p>
         </footer>
     </div>
+
+    <script>
+        const translations = {
+    "en": {
+        "title": "Privacy Policy",
+        "lastUpdated": "Last updated: December 30, 2025",
+        "introTitle": "Introduction",
+        "introText": "We respect your privacy and are committed to protecting it through our compliance with this policy. This policy describes the types of information we may collect from you or that you may provide when you visit our applications and our practices for collecting, using, maintaining, protecting, and disclosing that information.",
+        "collectionTitle": "Information Collection",
+        "collectionText": "We do not collect, store, or share any personal data on our servers. All data generated or used within the application remains on your device regardless of whether you are using a free or paid version.",
+        "adTitle": "Advertising and Free Services",
+        "adIntro": "For the free versions of our applications, we use Google AdMob to serve advertisements. To deliver relevant and personalized advertisements, Google AdMob may collect and use your device's unique advertising identifier.",
+        "adMobLabel": "Google AdMob:",
+        "adMobText": "We use Google AdMob to display ads. This service may use your device's advertising ID (e.g., IDFA on iOS, AAID on Android) to provide personalized ads.",
+        "adFooter": "We do not collect any other personal information for advertising purposes. You can control personalized advertising by adjusting the settings on your device (e.g., \"Ask App Not to Track\" on iOS or opting out of personalized ads in Android settings).",
+        "usageTitle": "Data Usage",
+        "usageIntro": "We use the information we collect to:",
+        "usage1": "Provide, maintain, and improve our apps.",
+        "usage2": "Respond to your comments and questions.",
+        "usage3": "Monitor and analyze trends, usage, and activities.",
+        "contactTitle": "Contact Us",
+        "contactIntro": "If you have any questions about this Privacy Policy, please contact us at:",
+        "emailLabel": "Email:",
+        "addressLabel": "Address:"
+    },
+    "de": {
+        "title": "Datenschutzerklärung",
+        "lastUpdated": "Zuletzt aktualisiert: 30. Dezember 2025",
+        "introTitle": "Einleitung",
+        "introText": "Wir respektieren Ihre Privatsphäre und verpflichten uns, diese durch Einhaltung dieser Richtlinie zu schützen. Diese Richtlinie beschreibt die Arten von Informationen, die wir möglicherweise von Ihnen erfassen oder die Sie bereitstellen, wenn Sie unsere Anwendungen nutzen, sowie unsere Praktiken zur Erfassung, Nutzung, Pflege, zum Schutz und zur Offenlegung dieser Informationen.",
+        "collectionTitle": "Datenerfassung",
+        "collectionText": "Wir erfassen, speichern oder teilen keine personenbezogenen Daten auf unseren Servern. Alle innerhalb der Anwendung generierten oder verwendeten Daten verbleiben auf Ihrem Gerät, unabhängig davon, ob Sie eine kostenlose oder kostenpflichtige Version verwenden.",
+        "adTitle": "Werbung und kostenlose Dienste",
+        "adIntro": "Für die kostenlosen Versionen unserer Anwendungen nutzen wir Google AdMob zur Bereitstellung von Werbung. Um relevante und personalisierte Werbung bereitzustellen, kann Google AdMob die eindeutige Werbekennung Ihres Geräts erfassen und verwenden.",
+        "adMobLabel": "Google AdMob:",
+        "adMobText": "Wir verwenden Google AdMob zur Anzeige von Werbeanzeigen. Dieser Dienst kann die Werbe-ID Ihres Geräts (z. B. IDFA unter iOS, AAID unter Android) verwenden, um personalisierte Anzeigen bereitzustellen.",
+        "adFooter": "Wir erfassen keine weiteren personenbezogenen Daten zu Werbezwecken. Sie können personalisierte Werbung steuern, indem Sie die Einstellungen auf Ihrem Gerät anpassen (z. B. \"App bitten, nicht zu tracken\" unter iOS oder Deaktivieren personalisierter Werbung in den Android-Einstellungen).",
+        "usageTitle": "Datennutzung",
+        "usageIntro": "Wir nutzen die erfassten Informationen, um:",
+        "usage1": "Unsere Apps bereitzustellen, zu pflegen und zu verbessern.",
+        "usage2": "Auf Ihre Kommentare und Fragen zu antworten.",
+        "usage3": "Trends, Nutzung und Aktivitäten zu überwachen und zu analysieren.",
+        "contactTitle": "Kontaktieren Sie uns",
+        "contactIntro": "Wenn Sie Fragen zu dieser Datenschutzerklärung haben, kontaktieren Sie uns bitte unter:",
+        "emailLabel": "E-Mail:",
+        "addressLabel": "Adresse:"
+    },
+    "es": {
+        "title": "Política de Privacidad",
+        "lastUpdated": "Última actualización: 30 de diciembre de 2025",
+        "introTitle": "Introducción",
+        "introText": "Respetamos su privacidad y nos comprometemos a protegerla cumpliendo con esta política. Esta política describe los tipos de información que podemos recopilar de usted o que puede proporcionar cuando utiliza nuestras aplicaciones, así como nuestras prácticas para recopilar, usar, mantener, proteger y divulgar dicha información.",
+        "collectionTitle": "Recopilación de Información",
+        "collectionText": "No recopilamos, almacenamos ni compartimos ningún dato personal en nuestros servidores. Todos los datos generados o utilizados dentro de la aplicación permanecen en su dispositivo, independientemente de si utiliza una versión gratuita o de pago.",
+        "adTitle": "Publicidad y Servicios Gratuitos",
+        "adIntro": "Para las versiones gratuitas de nuestras aplicaciones, utilizamos Google AdMob para publicar anuncios. Para ofrecer anuncios relevantes y personalizados, Google AdMob puede recopilar y utilizar el identificador de publicidad único de su dispositivo.",
+        "adMobLabel": "Google AdMob:",
+        "adMobText": "Utilizamos Google AdMob para mostrar anuncios. Este servicio puede utilizar el identificador de publicidad de su dispositivo (p. ej., IDFA en iOS, AAID en Android) para proporcionar anuncios personalizados.",
+        "adFooter": "No recopilamos ninguna otra información personal para fines publicitarios. Puede controlar la publicidad personalizada ajustando la configuración de su dispositivo (p. ej., \"Pedir a la app que no rastree\" en iOS o desactivar anuncios personalizados en la configuración de Android).",
+        "usageTitle": "Uso de Datos",
+        "usageIntro": "Utilizamos la información que recopilamos para:",
+        "usage1": "Proporcionar, mantener y mejorar nuestras aplicaciones.",
+        "usage2": "Responder a sus comentarios y preguntas.",
+        "usage3": "Monitorear y analizar tendencias, uso y actividades.",
+        "contactTitle": "Contáctenos",
+        "contactIntro": "Si tiene alguna pregunta sobre esta Política de Privacidad, contáctenos en:",
+        "emailLabel": "Correo electrónico:",
+        "addressLabel": "Dirección:"
+    },
+    "fr": {
+        "title": "Politique de Confidentialité",
+        "lastUpdated": "Dernière mise à jour : 30 décembre 2025",
+        "introTitle": "Introduction",
+        "introText": "Nous respectons votre vie privée et nous nous engageons à la protéger conformément à cette politique. Cette politique décrit les types d'informations que nous pouvons recueillir auprès de vous ou que vous pouvez fournir lorsque vous utilisez nos applications, ainsi que nos pratiques de collecte, d'utilisation, de conservation, de protection et de divulgation de ces informations.",
+        "collectionTitle": "Collecte d'Informations",
+        "collectionText": "Nous ne collectons, ne stockons et ne partageons aucune donnée personnelle sur nos serveurs. Toutes les données générées ou utilisées dans l'application restent sur votre appareil, que vous utilisiez une version gratuite ou payante.",
+        "adTitle": "Publicité et Services Gratuits",
+        "adIntro": "Pour les versions gratuites de nos applications, nous utilisons Google AdMob pour diffuser des publicités. Afin de proposer des publicités pertinentes et personnalisées, Google AdMob peut collecter et utiliser l'identifiant publicitaire unique de votre appareil.",
+        "adMobLabel": "Google AdMob :",
+        "adMobText": "Nous utilisons Google AdMob pour afficher des annonces. Ce service peut utiliser l'identifiant publicitaire de votre appareil (ex. : IDFA sur iOS, AAID sur Android) pour diffuser des annonces personnalisées.",
+        "adFooter": "Nous ne collectons aucune autre information personnelle à des fins publicitaires. Vous pouvez contrôler la publicité personnalisée en ajustant les paramètres de votre appareil (ex. : \"Demander à l'app de ne pas suivre\" sur iOS ou désactiver les annonces personnalisées dans les paramètres Android).",
+        "usageTitle": "Utilisation des Données",
+        "usageIntro": "Nous utilisons les informations collectées pour :",
+        "usage1": "Fournir, maintenir et améliorer nos applications.",
+        "usage2": "Répondre à vos commentaires et questions.",
+        "usage3": "Surveiller et analyser les tendances, l'utilisation et les activités.",
+        "contactTitle": "Contactez-nous",
+        "contactIntro": "Si vous avez des questions concernant cette politique de confidentialité, veuillez nous contacter à :",
+        "emailLabel": "E-mail :",
+        "addressLabel": "Adresse :"
+    },
+    "it": {
+        "title": "Informativa sulla Privacy",
+        "lastUpdated": "Ultimo aggiornamento: 30 dicembre 2025",
+        "introTitle": "Introduzione",
+        "introText": "Rispettiamo la tua privacy e ci impegniamo a proteggerla in conformità con la presente informativa. Questa informativa descrive i tipi di informazioni che potremmo raccogliere da te o che potresti fornire quando utilizzi le nostre applicazioni e le nostre pratiche di raccolta, utilizzo, conservazione, protezione e divulgazione di tali informazioni.",
+        "collectionTitle": "Raccolta delle Informazioni",
+        "collectionText": "Non raccogliamo, archiviamo né condividiamo dati personali sui nostri server. Tutti i dati generati o utilizzati all'interno dell'applicazione rimangono sul tuo dispositivo, indipendentemente dal fatto che tu stia utilizzando una versione gratuita o a pagamento.",
+        "adTitle": "Pubblicità e Servizi Gratuiti",
+        "adIntro": "Per le versioni gratuite delle nostre applicazioni, utilizziamo Google AdMob per pubblicare annunci. Per fornire annunci pertinenti e personalizzati, Google AdMob può raccogliere e utilizzare l'identificatore pubblicitario univoco del tuo dispositivo.",
+        "adMobLabel": "Google AdMob:",
+        "adMobText": "Utilizziamo Google AdMob per mostrare annunci pubblicitari. Questo servizio può utilizzare l'ID pubblicitario del dispositivo (ad es. IDFA su iOS, AAID su Android) per fornire annunci personalizzati.",
+        "adFooter": "Non raccogliamo altre informazioni personali per scopi pubblicitari. Puoi controllare la pubblicità personalizzata regolando le impostazioni sul tuo dispositivo (ad es. \"Chiedi all'app di non tracciare\" su iOS o disattivando gli annunci personalizzati nelle impostazioni Android).",
+        "usageTitle": "Utilizzo dei Dati",
+        "usageIntro": "Utilizziamo le informazioni raccolte per:",
+        "usage1": "Fornire, mantenere e migliorare le nostre app.",
+        "usage2": "Rispondere ai tuoi commenti e alle tue domande.",
+        "usage3": "Monitorare e analizzare tendenze, utilizzo e attività.",
+        "contactTitle": "Contattaci",
+        "contactIntro": "In caso di domande sulla presente Informativa sulla Privacy, ti preghiamo di contattarci a:",
+        "emailLabel": "E-mail:",
+        "addressLabel": "Indirizzo:"
+    },
+    "ja": {
+        "title": "プライバシーポリシー",
+        "lastUpdated": "最終更新日: 2025年12月30日",
+        "introTitle": "はじめに",
+        "introText": "当社はお客様のプライバシーを尊重し、本ポリシーを遵守することでお客様の個人情報を保護することをお約束します。本ポリシーは、お客様が当社のアプリケーションをご利用になる際にお客様から収集する可能性のある情報、またはお客様が提供する可能性のある情報の種類、およびそれらの情報の収集、使用、維持、保護、開示に関する当社の慣行について説明するものです。",
+        "collectionTitle": "情報の収集",
+        "collectionText": "当社はサーバー上でお客様の個人データを収集、保存、共有することはありません。無料版・有料版を問わず、アプリケーション内で生成または使用されるすべてのデータはお客様のデバイス内にのみ保持されます。",
+        "adTitle": "広告および無料サービス",
+        "adIntro": "アプリケーションの無料版では、広告配信のためにGoogle AdMobを利用しています。関連性の高いパーソナライズされた広告を配信するため、Google AdMobはお客様の端末固有の広告識別子を収集・使用する場合があります。",
+        "adMobLabel": "Google AdMob:",
+        "adMobText": "当社は広告表示のためにGoogle AdMobを使用しています。このサービスは、パーソナライズ広告を提供するためにお客様の端末の広告ID（例：iOSのIDFA、AndroidのAAID）を使用する場合があります。",
+        "adFooter": "当社が広告目的で他の個人情報を収集することはありません。お客様は端末の設定（例：iOSの「トラッキングを許可しない」、またはAndroid設定のパーソナライズ広告のオプトアウト）を変更することで、パーソナライズ広告を管理できます。",
+        "usageTitle": "データの利用目的",
+        "usageIntro": "収集された情報は以下の目的で使用されます：",
+        "usage1": "アプリの提供、維持、および品質向上。",
+        "usage2": "お客様からのコメントやお問い合わせへの対応。",
+        "usage3": "トレンド、利用状況、およびアクティビティの分析と把握。",
+        "contactTitle": "お問い合わせ",
+        "contactIntro": "本プライバシーポリシーに関するご質問がございましたら、下記までお問い合わせください：",
+        "emailLabel": "メールアドレス:",
+        "addressLabel": "所在地:"
+    },
+    "ko": {
+        "title": "개인정보 처리방침",
+        "lastUpdated": "최종 업데이트: 2025년 12월 30일",
+        "introTitle": "소개",
+        "introText": "당사는 귀하의 개인정보를 존중하며, 본 방침을 준수하여 이를 보호하기 위해 최선을 다하고 있습니다. 본 방침은 귀하가 당사 애플리케이션을 이용할 때 수집될 수 있거나 귀하가 제공하는 정보의 유형과 해당 정보의 수집, 이용, 관리, 보호 및 공개에 관한 당사의 정책을 설명합니다.",
+        "collectionTitle": "정보 수집",
+        "collectionText": "당사는 서버에 어떠한 개인 데이터도 수집, 저장 또는 공유하지 않습니다. 무료 버전 또는 유료 버전 사용 여부와 관계없이 애플리케이션 내에서 생성되거나 사용되는 모든 데이터는 귀하의 기기에만 유지됩니다.",
+        "adTitle": "광고 및 무료 서비스",
+        "adIntro": "당사 애플리케이션의 무료 버전에서는 광고를 제공하기 위해 Google AdMob을 사용합니다. 맞춤형 광고를 제공하기 위해 Google AdMob은 귀하 기기의 고유 광고 식별자를 수집하고 사용할 수 있습니다.",
+        "adMobLabel": "Google AdMob:",
+        "adMobText": "당사는 광고를 표시하기 위해 Google AdMob을 사용합니다. 이 서비스는 맞춤형 광고를 제공하기 위해 기기의 광고 ID(예: iOS의 IDFA, Android의 AAID)를 사용할 수 있습니다.",
+        "adFooter": "당사는 광고 목적으로 다른 개인정보를 수집하지 않습니다. 기기 설정(예: iOS의 \"앱에 추적 금지 요청\", Android 설정의 맞춤형 광고 수신 거부)을 변경하여 맞춤형 광고를 제어할 수 있습니다.",
+        "usageTitle": "데이터 사용",
+        "usageIntro": "수집된 정보는 다음 목적으로 사용됩니다:",
+        "usage1": "앱의 제공, 유지 및 개선.",
+        "usage2": "사용자 문의 및 피드백에 대한 응답.",
+        "usage3": "트렌드, 사용 현황 및 활동 모니터링 및 분석.",
+        "contactTitle": "문의하기",
+        "contactIntro": "본 개인정보 처리방침에 대해 질문이 있으신 경우 다음 연락처로 문의해 주시기 바랍니다:",
+        "emailLabel": "이메일:",
+        "addressLabel": "주소:"
+    },
+    "pt": {
+        "title": "Política de Privacidade",
+        "lastUpdated": "Última atualização: 30 de dezembro de 2025",
+        "introTitle": "Introdução",
+        "introText": "Respeitamos a sua privacidade e temos o compromisso de protegê-la cumprindo esta política. Esta política descreve os tipos de informações que podemos coletar de você ou que você pode fornecer ao usar nossos aplicativos, bem como nossas práticas de coleta, uso, manutenção, proteção e divulgação dessas informações.",
+        "collectionTitle": "Coleta de Informações",
+        "collectionText": "Não coletamos, armazenamos nem compartilhamos dados pessoais em nossos servidores. Todos os dados gerados ou usados no aplicativo permanecem no seu dispositivo, independentemente de você usar uma versão gratuita ou paga.",
+        "adTitle": "Publicidade e Serviços Gratuitos",
+        "adIntro": "Para as versões gratuitas de nossos aplicativos, usamos o Google AdMob para veicular anúncios. Para fornecer anúncios relevantes e personalizados, o Google AdMob pode coletar e usar o identificador de publicidade exclusivo do seu dispositivo.",
+        "adMobLabel": "Google AdMob:",
+        "adMobText": "Usamos o Google AdMob para exibir anúncios. Este serviço pode usar o ID de publicidade do seu dispositivo (por exemplo, IDFA no iOS, AAID no Android) para fornecer anúncios personalizados.",
+        "adFooter": "Não coletamos nenhuma outra informação pessoal para fins publicitários. Você pode controlar a publicidade personalizada ajustando as configurações do seu dispositivo (por exemplo, \"Pedir ao App para Não Rastrear\" no iOS ou desativando anúncios personalizados nas configurações do Android).",
+        "usageTitle": "Uso de Dados",
+        "usageIntro": "Usamos as informações coletadas para:",
+        "usage1": "Fornecer, manter e melhorar nossos aplicativos.",
+        "usage2": "Responder aos seus comentários e dúvidas.",
+        "usage3": "Monitorar e analisar tendências, uso e atividades.",
+        "contactTitle": "Fale Conosco",
+        "contactIntro": "Se você tiver alguma dúvida sobre esta Política de Privacidade, entre em contato conosco em:",
+        "emailLabel": "E-mail:",
+        "addressLabel": "Endereço:"
+    },
+    "zh": {
+        "title": "隐私政策",
+        "lastUpdated": "最后更新：2025年12月30日",
+        "introTitle": "引言",
+        "introText": "我们尊重您的隐私，并承诺通过遵守本政策来保护您的隐私。本政策描述了您在访问和使用我们的应用程序时我们可能收集或您可能提供的信息类型，以及我们收集、使用、维护、保护和披露这些信息的常规做法。",
+        "collectionTitle": "信息收集",
+        "collectionText": "我们不会在服务器上收集、存储或共享任何个人数据。无论您使用的是免费版本还是付费版本，在应用程序中生成或使用的所有数据均仅保留在您的设备上。",
+        "adTitle": "广告与免费服务",
+        "adIntro": "对于我们应用程序的免费版本，我们使用 Google AdMob 提供广告服务。为了提供相关且个性化的广告，Google AdMob 可能会收集并使用您设备的唯一广告标识符。",
+        "adMobLabel": "Google AdMob：",
+        "adMobText": "我们使用 Google AdMob 展示广告。该服务可能会使用您设备的广告 ID（例如 iOS 上的 IDFA、Android 上的 AAID）来提供个性化广告。",
+        "adFooter": "我们不会出于广告目的收集任何其他个人信息。您可以通过调整设备上的设置（例如 iOS 上的\"要求 App 不追踪\"或在 Android 设置中选择退出个性化广告）来控制个性化广告。",
+        "usageTitle": "数据用途",
+        "usageIntro": "我们将收集的信息用于：",
+        "usage1": "提供、维护和改进我们的应用程序。",
+        "usage2": "回复您的意见和问题。",
+        "usage3": "监测和分析趋势、使用情况和活动。",
+        "contactTitle": "联系我们",
+        "contactIntro": "如果您对本隐私政策有任何疑问，请通过以下方式联系我们：",
+        "emailLabel": "电子邮箱：",
+        "addressLabel": "地址："
+    },
+    "ar": {
+        "title": "سياسة الخصوصية",
+        "lastUpdated": "آخر تحديث: 30 ديسمبر 2025",
+        "introTitle": "مقدمة",
+        "introText": "نحن نحترم خصوصيتك ونلتزم بحمايتها من خلال امتثالنا لهذه السياسة. توضح هذه السياسة أنواع المعلومات التي قد نجمعها منك أو التي قد تقدمها عند استخدام تطبيقاتنا وممارساتنا لجمع تلك المعلومات واستخدامها والحفاظ عليها وحمايتها والإفصاح عنها.",
+        "collectionTitle": "جمع المعلومات",
+        "collectionText": "نحن لا نجمع أو نخزن أو نشارك أي بيانات شخصية على خوادمنا. تظل جميع البيانات التي يتم إنشاؤها أو استخدامها داخل التطبيق على جهازك فقط بغض النظر عما إذا كنت تستخدم إصدارًا مجانيًا أو مدفوعًا.",
+        "adTitle": "الإعلانات والخدمات المجانية",
+        "adIntro": "بالنسبة للإصدارات المجانية من تطبيقاتنا، نستخدم Google AdMob لعرض الإعلانات. لتقديم إعلانات ملائمة ومخصصة، قد تقوم Google AdMob بجمع واستخدام معرف الإعلانات الفريد لجهازك.",
+        "adMobLabel": "Google AdMob:",
+        "adMobText": "نستخدم Google AdMob لعرض الإعلانات. قد تستخدم هذه الخدمة معرف الإعلانات الخاص بجهازك (مثل IDFA على iOS أو AAID على Android) لتقديم إعلانات مخصصة.",
+        "adFooter": "نحن لا نجمع أي معلومات شخصية أخرى لأغراض إعلانية. يمكنك التحكم في الإعلانات المخصصة عن طريق ضبط الإعدادات على جهازك (مثل \"طلب عدم التتبع\" على iOS أو إلغاء الاشتراك في الإعلانات المخصصة في إعدادات Android).",
+        "usageTitle": "استخدام البيانات",
+        "usageIntro": "نستخدم المعلومات التي نجمعها من أجل:",
+        "usage1": "تقديم تطبيقاتنا وصيانتها وتحسينها.",
+        "usage2": "الرد على تعليقاتك واستفساراتك.",
+        "usage3": "مراقبة وتحليل الاتجاهات والاستخدام والأنشطة.",
+        "contactTitle": "اتصل بنا",
+        "contactIntro": "إذا كانت لديك أي أسئلة حول سياسة الخصوصية هذه، يرجى التواصل معنا عبر:",
+        "emailLabel": "البريد الإلكتروني:",
+        "addressLabel": "العنوان:"
+    }
+};
+
+        function setLanguage(lang) {
+            const data = translations[lang] || translations["en"];
+            const container = document.getElementById("policyContainer");
+            
+            // RTL handling for Arabic
+            if (lang === "ar") {
+                container.setAttribute("dir", "rtl");
+                document.documentElement.lang = "ar";
+            } else {
+                container.setAttribute("dir", "ltr");
+                document.documentElement.lang = lang;
+            }
+
+            document.getElementById("policyTitle").textContent = data.title;
+            document.getElementById("policyLastUpdated").textContent = data.lastUpdated;
+            document.getElementById("introTitle").textContent = data.introTitle;
+            document.getElementById("introText").textContent = data.introText;
+            document.getElementById("collectionTitle").textContent = data.collectionTitle;
+            document.getElementById("collectionText").textContent = data.collectionText;
+            document.getElementById("adTitle").textContent = data.adTitle;
+            document.getElementById("adIntro").textContent = data.adIntro;
+            document.getElementById("adMobLabel").textContent = data.adMobLabel;
+            document.getElementById("adMobText").textContent = data.adMobText;
+            document.getElementById("adFooter").textContent = data.adFooter;
+            document.getElementById("usageTitle").textContent = data.usageTitle;
+            document.getElementById("usageIntro").textContent = data.usageIntro;
+            document.getElementById("usage1").textContent = data.usage1;
+            document.getElementById("usage2").textContent = data.usage2;
+            document.getElementById("usage3").textContent = data.usage3;
+            document.getElementById("contactTitle").textContent = data.contactTitle;
+            document.getElementById("contactIntro").textContent = data.contactIntro;
+            document.getElementById("emailLabel").textContent = data.emailLabel;
+            document.getElementById("addressLabel").textContent = data.addressLabel;
+
+            // Save preference
+            localStorage.setItem("appsbygerard_privacy_lang", lang);
+            
+            const selectEl = document.getElementById("langSelect");
+            if (selectEl && selectEl.value !== lang) {
+                selectEl.value = lang;
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const selectEl = document.getElementById("langSelect");
+            
+            // Priority: URL query param -> localStorage -> browser language -> default "en"
+            const urlParams = new URLSearchParams(window.location.search);
+            const queryLang = urlParams.get("lang");
+            const storedLang = localStorage.getItem("appsbygerard_privacy_lang");
+            const browserLang = (navigator.language || navigator.userLanguage || "").slice(0, 2);
+
+            let initialLang = "en";
+            if (queryLang && translations[queryLang]) {
+                initialLang = queryLang;
+            } else if (storedLang && translations[storedLang]) {
+                initialLang = storedLang;
+            } else if (browserLang && translations[browserLang]) {
+                initialLang = browserLang;
+            }
+
+            setLanguage(initialLang);
+
+            selectEl.addEventListener("change", (e) => {
+                setLanguage(e.target.value);
+            });
+        });
+    </script>
     <script src="script.js"></script>
 </body>
 
